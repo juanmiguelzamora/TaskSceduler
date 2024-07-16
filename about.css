@@ -1,0 +1,174 @@
+body{
+    font-family: 'Poppins', sans-serif;
+      .poppins-regular {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+      .poppins-semibold {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+      }
+      
+      .poppins-extrabold {
+        font-family: "Poppins", sans-serif;
+        font-weight: 800;
+        font-style: normal;
+      }
+  }
+  .abt-body {
+      margin: 0;
+      background-color: #424866;
+      background-attachment: scroll;
+      overflow: auto;
+  }
+  .abt-body h2{
+    color: #ffffff;
+  }
+  html {
+      box-sizing: border-box;
+  }
+    
+    *, *:before, *:after {
+      box-sizing: inherit;
+  }
+    
+  .column {
+      float: left;
+      width: 33.3%;
+      margin-bottom: 16px;
+      padding: 0 8px;
+  }
+    
+  .card {
+    height: 500px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      margin: 8px;
+      padding: 20px;
+      background-color: #FFF;
+      border-radius: 15px;
+      -webkit-border-radius: 15px;
+      -moz-border-radius: 15px;
+      -ms-border-radius: 15px;
+      -o-border-radius: 15px;
+  }
+    
+  .about-section {
+      padding: 50px;
+      text-align: center;
+      background-color: #767CFF;
+      width: 100%;
+      margin: auto;
+  }
+    .abt-container p{
+      color: #424866;
+    }
+    .about-section h1{
+      color: #FFF;
+    }
+    .abt-container h2{
+      color: #424866;
+    }
+    .abt-container {
+      padding: 0 16px;
+    }
+    
+    .container::after, .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    
+    .title {
+      color: grey;
+    }
+    
+    .abt-button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 8px;
+      color: white;
+      background-color: #767CFF;
+      text-align: center;
+      cursor: pointer;
+      width: 40%;
+      margin-bottom: 10px;
+      border-radius: 20px;
+    }
+    .about-section p{
+      color: #ffffff;
+    }
+    
+    .abt-button:hover {
+      background-color: #424866;
+    }
+    
+    .outbtn{
+      padding: 20px;
+      margin-left: 30px;
+      background: #424866;
+      color: #fff;
+      border-radius: 15px;
+      border: 0;
+      font-size: 14px;
+      transition: .5s;
+    }
+    
+    .outbtn:hover{
+      background: #db0000;
+      transform: scale(1.10);
+      -webkit-transform: scale(1.10);
+      -moz-transform: scale(1.10);
+      -ms-transform: scale(1.10);
+      -o-transform: scale(1.10);
+    }
+  
+    .back-btn{
+      font-size: 20px;
+      font-weight: 600;
+      background: transparent;
+      padding: 0;
+      margin: 0;
+      color: #ffffff;
+      align-items: left;
+      display: flex;
+      border: 0;
+      transition: .5s;
+      -webkit-transition: .5s;
+      -moz-transition: .5s;
+      -ms-transition: .5s;
+      -o-transition: .5s;
+  }
+  .back-btn:hover{
+    background: url(icons8-back-50.png);
+    height: 40px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    color: transparent;
+  }
+
+  .footer {
+    display: none;
+    bottom: 0;
+    left: 38%;
+    font-weight: bold;
+    margin-top: auto;
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.footer-content {
+    width: 100%;
+}
+
+.footer-copyright {
+    margin-top: 20px;
+    color: #0000009d;
+}

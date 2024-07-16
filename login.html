@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Task Scheduler</title>
+<link rel="icon" type="png" href="icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="login.css">
+</head>
+<body>
+  
+  <div class="top1">
+    <img src="logo1.png" height="50px">
+    <ul class="nav-links">
+        <li><a href="login.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <header class="top">
+      <h1>Task Scheduler</h1>
+    </header>
+    
+    <form id="loginForm">
+      <h2>Login</h2>
+      <label>Username</label>
+      <input type="text" id="username" placeholder="Your username">
+      <label>Password</label>
+      <input type="password" id="password" placeholder="Your password">
+      <button type="button" class="loginbtn" onclick="login()">Login</button>
+      <hr>
+      <button type="button" class="createbtn" onclick="showRegisterForm()">Create new account</button>
+    </form>
+    
+    <div id="registerPopup" class="popup">
+      <form id="registerForm">
+        <h2>Register</h2>
+        <label>Username</label>
+        <input type="text" id="regUsername" placeholder="Enter your username">
+        <label>Password</label>
+        <input type="password" id="regPassword" placeholder="Enter your password">
+        <button type="button" class="regbtn" onclick="register()">Register</button>
+        <hr>
+        <button type="button" class="closebtn" onclick="hideRegisterForm()">Close</button>
+      </form>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="footer-content">
+        <div class="footer-copyright">
+            <p>&copy; 2024 TASK SCHEDULER | All Rights Reserved
+            </p>
+        </div>
+    </div>
+  </footer>
+  
+  <script src="login.js"></script>
+</body>
+</html>

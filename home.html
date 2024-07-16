@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Scheduler</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="png" href="icon.png">
+    <link rel="stylesheet" href="home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+    <header>
+        <div class="logo"><img src="logo1.png" height="50px"></div>
+    <nav class="navigation">
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <button class="outbtn" onclick="signOut()">Log out</button>
+    </nav>
+    </header>
+
+    <div class="container">
+        <h1>Task Scheduler</h1>
+        <div class="form-container">
+            <input type="text" id="taskInput" placeholder="Add Task">
+            <input type="datetime-local" id="dueDate" placeholder="Due Date">
+            <select id="prioritySelect">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+            
+            <button onclick="addTask()" id="addTaskBtn">Add</button>
+        </div>
+        
+        
+    </div>
+    
+    <div class="tasks-container">
+        <h2>Task Schedules</h2>
+        <div class="button-container">
+            <button id="pendingBtn" onclick="filterTasks('pending')">Pending</button>
+            <button id="missingBtn" onclick="filterTasks('missing')">Missing</button>
+            <button id="completeBtn" onclick="filterTasks('completed')">Complete</button>
+            <p id="taskCount"></p>
+            <div class="List-container">
+                <ul id="taskList" ondragover="allowDrop(event)" ondrop="drop(event)">
+                </ul>
+            </div>
+            <button id="clearTasksBtn" onclick="clearTasks()">Clear All</button>
+        </div>
+
+    </div>
+
+    <script src="home.js"></script>
+</body>
+</html
